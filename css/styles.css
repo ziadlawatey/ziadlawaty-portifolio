@@ -91,12 +91,12 @@ button {
 
 .main-section {
   min-height: 100vh;
-  padding: 100px 60px 40px;
+  padding: 130px 60px 40px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   background: #656570;
-  gap: 10px;
+  gap: 50px;
 }
 
 .personal-about-container {
