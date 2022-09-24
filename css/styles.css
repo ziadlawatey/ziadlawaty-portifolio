@@ -338,7 +338,7 @@ button {
 
 @media (max-width: 700px) and (min-width: 550px) {
   .main-section {
-    padding: 90px 0 70px;
+    padding: 130px 0 70px;
   }
 
   .main-socialmedia {
@@ -435,7 +435,7 @@ button {
   }
 
   .main-section {
-    padding: 80px 10px 40px;
+    padding: 130px 10px 40px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
