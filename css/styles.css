@@ -369,7 +369,7 @@ button {
   }
 }
 
-@media (max-width: 549px) and (min-width: 350px) {
+@media (max-width: 549px) {
   .nav-header {
     padding: 0 25px;
   }
