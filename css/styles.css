@@ -9,7 +9,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-block-start: 60spx;
+  scroll-padding-block-start: 60px;
 }
 
 h1,
@@ -254,10 +254,11 @@ button {
 }
 
 .all-projects-btn {
-  width: 220px;
+  width: 225px;
   padding: 18px;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10px;
   user-select: none;
   background: #fff;
