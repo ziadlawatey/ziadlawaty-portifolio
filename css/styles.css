@@ -73,6 +73,11 @@ button {
   letter-spacing: 1px;
   font-size: 20px;
   font-weight: 500;
+  transition: all 0.5s;
+}
+
+.logo:hover {
+  color: #f00;
 }
 
 .menu-btn {
