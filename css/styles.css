@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 *,
 *::before,
@@ -9,7 +9,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-block-start: 60px;
+  scroll-padding-block-start: 60spx;
 }
 
 h1,
@@ -33,7 +33,7 @@ i {
 
 body {
   height: 100vh;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -46,17 +46,21 @@ button {
 }
 
 .nav-header {
-  width: 100vw;
-  height: 70px;
-  padding: 0 50px;
+  width: 98vw;
+  height: 65px;
+  padding: 0 70px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
   position: fixed;
   z-index: 2;
+  left: 0;
+  right: 0;
   user-select: none;
   background: #fff;
+  border-radius: 0 0 5px 5px;
 }
 
 .nav-header a {
@@ -64,14 +68,25 @@ button {
   color: #000;
 }
 
-.nav-header a:hover {
-  transform: translateX(-2px);
-  color: #f00;
-}
-
 .logo {
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.menu-btn {
+  cursor: pointer;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #23242a;
+  border-radius: 2px;
+}
+
+.menu-btn i {
+  color: #fff;
   font-size: 20px;
 }
 
@@ -82,7 +97,18 @@ button {
 
 .nav-links-container {
   display: flex;
-  gap: 20px;
+  gap: 10px;
+}
+
+.nav-links-container a {
+  padding: 5px 10px;
+  border-radius: 2px;
+  transition: all 0.5s;
+}
+
+.nav-links-container a:hover {
+  color: #fff;
+  background: #1c1c1c;
 }
 
 .nav-socialmedia {
@@ -337,6 +363,10 @@ button {
 }
 
 @media (max-width: 700px) and (min-width: 550px) {
+  .nav-header {
+    padding: 0 40px;
+  }
+
   .main-section {
     padding: 130px 0 70px;
   }
@@ -374,7 +404,13 @@ button {
     padding: 0 25px;
   }
 
-  #click:checked ~ #navbar {
+  #click:checked ~ .nav-header {
+    width: 100vw;
+    border-radius: 0;
+    gap: 0;
+  }
+
+  #click:checked ~ .nav-header #navbar {
     left: 0;
   }
 
@@ -384,9 +420,14 @@ button {
     font-size: 20px;
   }
 
+  .nav-header {
+    padding: 0 50px;
+    transition: all 0.3s;
+  }
+
   #navbar {
     width: 100vw;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 65px);
     padding: 40px 20px;
     display: flex;
     justify-content: space-between;
@@ -394,7 +435,7 @@ button {
     flex-direction: column;
     position: fixed;
     gap: 20px;
-    top: 70px;
+    top: 65px;
     left: -100vw;
     text-align: center;
     background: #000016;
@@ -404,6 +445,7 @@ button {
   .nav-links-container {
     display: flex;
     flex-direction: column;
+    gap: 20px;
   }
 
   .nav-links-container a {
@@ -412,6 +454,8 @@ button {
 
   .nav-links-container a:hover {
     transform: translateX(0);
+    color: #000016;
+    background: #fff;
   }
 
   .nav-socialmedia {
@@ -427,11 +471,11 @@ button {
   }
 
   .nav-socialmedia a {
-    color: #000 !important;
+    color: #000;
+    transition: all 0.5;
   }
-
-  .nav-socialmedia a {
-    color: #fff;
+  .nav-socialmedia a:hover {
+    color: #f00;
   }
 
   .main-section {
